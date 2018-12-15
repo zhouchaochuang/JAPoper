@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		BAEB58EF21C542C700DBF4AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB58EE21C542C700DBF4AC /* AppDelegate.m */; };
 		BAEB58F221C542C700DBF4AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB58F121C542C700DBF4AC /* ViewController.m */; };
-		BAEB58F521C542C700DBF4AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEB58F321C542C700DBF4AC /* Main.storyboard */; };
 		BAEB58F721C542C900DBF4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB58F621C542C900DBF4AC /* Assets.xcassets */; };
 		BAEB58FA21C542C900DBF4AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEB58F821C542C900DBF4AC /* LaunchScreen.storyboard */; };
 		BAEB58FD21C542C900DBF4AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB58FC21C542C900DBF4AC /* main.m */; };
 		BAEB590721C542C900DBF4AC /* JAPoperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB590621C542C900DBF4AC /* JAPoperTests.m */; };
 		BAEB591221C542CA00DBF4AC /* JAPoperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB591121C542CA00DBF4AC /* JAPoperUITests.m */; };
+		BAEB592221C5458800DBF4AC /* JAPoper.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB592121C5458800DBF4AC /* JAPoper.m */; };
+		BAEB592521C54A6D00DBF4AC /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB592421C54A6D00DBF4AC /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		BAEB58EE21C542C700DBF4AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BAEB58F021C542C700DBF4AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BAEB58F121C542C700DBF4AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BAEB58F421C542C700DBF4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAEB58F621C542C900DBF4AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAEB58F921C542C900DBF4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAEB58FB21C542C900DBF4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,10 @@
 		BAEB590D21C542CA00DBF4AC /* JAPoperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAPoperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEB591121C542CA00DBF4AC /* JAPoperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAPoperUITests.m; sourceTree = "<group>"; };
 		BAEB591321C542CA00DBF4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEB592021C5458800DBF4AC /* JAPoper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAPoper.h; sourceTree = "<group>"; };
+		BAEB592121C5458800DBF4AC /* JAPoper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAPoper.m; sourceTree = "<group>"; };
+		BAEB592321C54A6D00DBF4AC /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		BAEB592421C54A6D00DBF4AC /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,11 @@
 		BAEB58EC21C542C700DBF4AC /* JAPoper */ = {
 			isa = PBXGroup;
 			children = (
+				BAEB591F21C5453900DBF4AC /* JAPoper */,
 				BAEB58ED21C542C700DBF4AC /* AppDelegate.h */,
 				BAEB58EE21C542C700DBF4AC /* AppDelegate.m */,
 				BAEB58F021C542C700DBF4AC /* ViewController.h */,
 				BAEB58F121C542C700DBF4AC /* ViewController.m */,
-				BAEB58F321C542C700DBF4AC /* Main.storyboard */,
 				BAEB58F621C542C900DBF4AC /* Assets.xcassets */,
 				BAEB58F821C542C900DBF4AC /* LaunchScreen.storyboard */,
 				BAEB58FB21C542C900DBF4AC /* Info.plist */,
@@ -130,6 +134,17 @@
 				BAEB591321C542CA00DBF4AC /* Info.plist */,
 			);
 			path = JAPoperUITests;
+			sourceTree = "<group>";
+		};
+		BAEB591F21C5453900DBF4AC /* JAPoper */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB592321C54A6D00DBF4AC /* UIView+Extension.h */,
+				BAEB592421C54A6D00DBF4AC /* UIView+Extension.m */,
+				BAEB592021C5458800DBF4AC /* JAPoper.h */,
+				BAEB592121C5458800DBF4AC /* JAPoper.m */,
+			);
+			path = JAPoper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +252,6 @@
 			files = (
 				BAEB58FA21C542C900DBF4AC /* LaunchScreen.storyboard in Resources */,
 				BAEB58F721C542C900DBF4AC /* Assets.xcassets in Resources */,
-				BAEB58F521C542C700DBF4AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEB592521C54A6D00DBF4AC /* UIView+Extension.m in Sources */,
 				BAEB58F221C542C700DBF4AC /* ViewController.m in Sources */,
+				BAEB592221C5458800DBF4AC /* JAPoper.m in Sources */,
 				BAEB58FD21C542C900DBF4AC /* main.m in Sources */,
 				BAEB58EF21C542C700DBF4AC /* AppDelegate.m in Sources */,
 			);
@@ -300,14 +316,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BAEB58F321C542C700DBF4AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAEB58F421C542C700DBF4AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BAEB58F821C542C900DBF4AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DEELANSLBQ;
 				INFOPLIST_FILE = JAPoper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DEELANSLBQ;
 				INFOPLIST_FILE = JAPoper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
